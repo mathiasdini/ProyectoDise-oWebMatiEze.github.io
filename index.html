@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/Style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" async defer></script>
+    <script src="./JS/script.js" async defer></script>
+
+    <title>Convertidor</title>
+</head>
+<body>
+    <h1>Convertidor de sistema metrico</h1>
+    <form class="Ancho">
+
+        <div class="mb-3">
+
+          <label for="numero1" class="form-label" >Longitud</label>
+          <input type="number text" class="form-control" id="num1" aria-describedby="num1" placeholder="Ingrese longitud">
+
+        </div>
+
+        <select class="form-select" aria-label="Default select example" id="Cambio">
+
+            <option value="mm">Milímetro (mm)</option>
+            
+            <option value="cm">Centímetro (cm)</option>
+            
+            <option value="m">Metro (m)</option>
+
+            <option value="km">Kilómetro (km)</option>
+
+          </select> 
+
+          <div class="mb-3">
+              
+              <label for="inputResultado" class="form-label">Resultado</label>
+              
+              <input type="number text" class="form-control" id="muestra">
+              
+            </div>
+
+            <select class="form-select" aria-label="Default select example" id="CambioResultado">
+
+                <option value="mm">Milímetro (mm)</option>
+                
+                <option value="cm">Centímetro (cm)</option>
+                
+                <option value="m">Metro (m)</option>
+    
+                <option value="km">Kilómetro (km)</option>
+    
+              </select> 
+
+            <button type="submit" class="btn btn-primary  color" id="btn" >Calcular</button>
+
+      </form>
+</body>
+</html>
